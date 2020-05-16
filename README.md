@@ -55,7 +55,7 @@ ApplicationB.cpp
 Linking ProjectB
 ```
 
-2. Then simply build run the project using the RunProject bash script:
+2. Then simply run the project using the RunProject bash script:
 
 ``` 
 $ ./RunProject.sh                                                                                                                                        ✔ 
