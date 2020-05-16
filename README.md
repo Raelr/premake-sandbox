@@ -4,7 +4,9 @@ This porject was made for the purpose of testing premake's build capabilities. T
 
 ProjectB contains an instance of ProjectA - it then uses an entrypoind definition to run itself THROUGH ProjectA's main definition. 
 
-# BUILD INSTRUCTIONS
+## BUILD INSTRUCTIONS
+
+### MANUAL METHOD
 
 The project can be built usng the following commands:
 
@@ -35,3 +37,31 @@ Finally, run the project using the following command:
 ```
 
 This should run the basic project! 
+
+### BASH SCRIPT
+
+If you're running OSX, you can run the two bash scripts provided with the project to build and run the project:
+
+1. Run the build script:
+
+```
+$ ./BuildGMake.sh                                                                                                                                        ✔ 
+Building configurations...
+Running action 'gmake2'...
+Done (43ms).
+==== Building ProjectA (debug) ====
+==== Building ProjectB (debug) ====
+ApplicationB.cpp
+Linking ProjectB
+```
+
+2. Then simply build run the project using the RunProject bash script:
+
+``` 
+$ ./RunProject.sh                                                                                                                                        ✔ 
+[2020-05-17 07:40:36.749] [info] Starting app.
+[2020-05-17 07:40:36.749] [info] Running app.
+[2020-05-17 07:40:36.749] [info] Stopping app - releasing memory
+```
+
+If you see the output above then you successfully build and ran the project! 
